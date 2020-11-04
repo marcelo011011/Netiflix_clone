@@ -1,32 +1,50 @@
-:root{
+:root{                           /*Variaveis*/
     --vermelho:#e50914;
     --preto:#141414;
 }
 *{                    
-    margin: 0;
+    margin: 0;                /*Reset CSS*/
     padding: 0;
 }
+
+/*Elementos base*/
+           
 body{
     background: var(--preto);
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 header .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 header .logo {
     color: var(--vermelho);
-    font-family: sans-serif;
-    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    
 }
 header nav a {
     text-decoration: none;
     color: #aaaaaa;
-    margin-right: 10px;;
+    margin-right: 10px;
+  
+    font-family: sans-serif;
 }
 header nav a:hover {
     color: #fff;
+
+}
+
+       /*Filme principal*/
+       
+.filme-principal {
+    font-size: 16px;
+    background-image: linear-gradient(0,0,0,50),linear-gradient(0,0,0,50),url('../img/capa_matrix.jpg');
+    height: 400px;
+    background-size: cover;
 
 }
